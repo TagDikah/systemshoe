@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.limkokwing_reporting_system.ViewAnalytics">
+   <children>
+      <Pane layoutY="-14.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutY="-15.0" prefHeight="89.0" prefWidth="600.0" style="-fx-background-color: white;">
+               <children>
+                  <Text layoutX="14.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Limkokwing Academic System">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btnlogout" layoutX="454.0" layoutY="32.0" mnemonicParsing="false" onAction="#logout" prefHeight="47.0" prefWidth="123.0" text="Log Out">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="6.0" layoutY="83.0" prefHeight="299.0" prefWidth="272.0" style="-fx-background-color: white;">
+               <children>
+                  <BarChart fx:id="studentBarChart" prefHeight="225.0" prefWidth="272.0" title="Student Enrollement">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+                  <Button fx:id="btnviewstudents" layoutX="62.0" layoutY="236.0" mnemonicParsing="false" onAction="#viewstudents" prefHeight="45.0" prefWidth="123.0" text="View Students" />
+               </children></Pane>
+            <Pane layoutX="306.0" layoutY="83.0" prefHeight="299.0" prefWidth="272.0" style="-fx-background-color: white;">
+               <children>
+                  <PieChart fx:id="lecturerPieChart" layoutX="2.0" layoutY="-3.0" prefHeight="203.0" prefWidth="272.0" style="-fx-background-color: whitegrey;" title="New LEcturers" />
+                  <Button fx:id="btnviewlecturer" layoutX="97.0" layoutY="240.0" mnemonicParsing="false" onAction="#viewlecturer" prefHeight="45.0" prefWidth="106.0" text="View Lecturer" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

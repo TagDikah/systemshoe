@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="412.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.limkokwing_reporting_system.Adminpanel">
+   <children>
+      <Pane layoutX="200.0" layoutY="52.0" prefHeight="412.0" prefWidth="603.0" style="-fx-background-color: skyblue;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutY="-9.0" prefHeight="87.0" prefWidth="600.0" style="-fx-background-color: white;">
+               <children>
+                  <Text layoutX="114.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Limkokwing Academic System" wrappingWidth="377.82159423828125">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btnlogout" layoutX="492.0" layoutY="24.0" mnemonicParsing="false" onAction="#logout" prefHeight="44.0" prefWidth="101.0" text="Log out" />
+               </children>
+            </Pane>
+            <Pane layoutX="146.0" layoutY="83.0" prefHeight="148.0" prefWidth="191.0" style="-fx-background-color: white;">
+               <children>
+                  <Button fx:id="btnstudentmanagement" layoutX="29.0" layoutY="109.0" mnemonicParsing="false" onAction="#studentmanagement" prefHeight="36.0" prefWidth="131.0" text="Student Management" />
+                  <ImageView fitHeight="100.0" fitWidth="131.0" layoutX="28.0" layoutY="9.0">
+                     <image>
+                        <Image url="@images (1).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="386.0" layoutY="248.0" prefHeight="148.0" prefWidth="191.0" style="-fx-background-color: white;">
+               <children>
+                  <Button fx:id="btnviewanalytics" layoutX="25.0" layoutY="110.0" mnemonicParsing="false" onAction="#viewanalytics" prefHeight="36.0" prefWidth="139.0" text="View Analytics" />
+                  <ImageView fitHeight="107.0" fitWidth="151.0" layoutX="25.0">
+                     <image>
+                        <Image url="@analysis.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="146.0" layoutY="248.0" prefHeight="148.0" prefWidth="191.0" style="-fx-background-color: white;">
+               <children>
+                  <Button fx:id="btnacademiccomponents" layoutX="26.0" layoutY="109.0" mnemonicParsing="false" onAction="#academiccomponents" prefHeight="36.0" prefWidth="139.0" text="Academic Components" />
+                  <ImageView fitHeight="107.0" fitWidth="139.0" layoutX="28.0" layoutY="2.0">
+                     <image>
+                        <Image url="@learning-support.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="386.0" layoutY="83.0" prefHeight="148.0" prefWidth="191.0" style="-fx-background-color: white;">
+               <children>
+                  <Button fx:id="btnlecturermanagement" layoutX="29.0" layoutY="109.0" mnemonicParsing="false" onAction="#lecturermanagement" prefHeight="36.0" prefWidth="133.0" text="Lecturer Management" />
+                  <ImageView fitHeight="100.0" fitWidth="128.0" layoutX="32.0" layoutY="9.0">
+                     <image>
+                        <Image url="@professor.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fitHeight="78.0" fitWidth="84.0">
+               <image>
+                  <Image url="@user.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="-4.0" layoutY="78.0" prefHeight="335.0" prefWidth="133.0" style="-fx-background-color: white;">
+               <children>
+                  <Hyperlink layoutX="14.0" layoutY="141.0" prefHeight="53.0" prefWidth="106.0" style="-fx-background-color: white;" text="Manage Profile">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Hyperlink>
+                  <Hyperlink layoutX="13.0" layoutY="194.0" prefHeight="36.0" prefWidth="116.0" text="Account Settings">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Hyperlink>
+                  <Hyperlink layoutX="9.0" layoutY="240.0" prefHeight="36.0" prefWidth="122.0" text="User Management">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Hyperlink>
+                  <Hyperlink layoutX="14.0" layoutY="287.0" prefHeight="36.0" prefWidth="116.0" text="Security Settings">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Hyperlink>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="36.0" prefWidth="106.0" text="Label" />
+                  <Pane layoutX="6.0" prefHeight="335.0" prefWidth="133.0" style="-fx-background-color: white;">
+                     <children>
+                        <Hyperlink layoutY="81.0" prefHeight="53.0" prefWidth="116.0" style="-fx-background-color: white;" text="Manage Profile">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Hyperlink>
+                        <Hyperlink layoutY="121.0" prefHeight="53.0" prefWidth="122.0" text="Account Settings">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Hyperlink>
+                        <Hyperlink layoutX="-5.0" layoutY="174.0" prefHeight="36.0" prefWidth="128.0" text="User Management">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Hyperlink>
+                        <Hyperlink layoutX="-3.0" layoutY="204.0" prefHeight="53.0" prefWidth="128.0" text="Security Settings">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Hyperlink>
+                        <Label fx:id="lblAdminName" layoutX="48.0" layoutY="15.0" prefHeight="36.0" prefWidth="77.0" text="Label" />
+                        <Label fx:id="lblAdminRole" layoutX="48.0" layoutY="55.0" prefHeight="36.0" prefWidth="57.0" text="Label" />
+                        <Text layoutX="14.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+                        <Text layoutX="19.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role" />
+                        <Button fx:id="btnviewprofile" layoutX="3.0" layoutY="266.0" mnemonicParsing="false" onAction="#viewprofile" prefHeight="44.0" prefWidth="116.0" text="view profile" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

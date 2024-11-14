@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.limkokwing_reporting_system.academicComponents">
+   <children>
+      <Pane layoutX="193.0" layoutY="69.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="85.0" layoutY="54.0" prefHeight="311.0" prefWidth="434.0" style="-fx-background-color: white;">
+               <children>
+                  <Text layoutX="124.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Academic Details">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="lblacamedicyear" layoutX="81.0" layoutY="86.0" text="Acamedicyear" />
+                  <Label fx:id="lblsemester" layoutX="80.0" layoutY="181.0" text="Semester" />
+                  <ComboBox fx:id="comboboxsemester" layoutX="180.0" layoutY="176.0" prefHeight="29.0" prefWidth="179.0">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <String fx:value="semester 1" />
+                           <String fx:value="semester 2" />
+                        </FXCollections>
+                     </items>
+                  </ComboBox>
+                  <Label fx:id="lblclass" layoutX="93.0" layoutY="139.0" text="Class" />
+                  <TextField fx:id="txtclass" layoutX="183.0" layoutY="134.0" />
+                  <Label fx:id="lblmodule" layoutX="85.0" layoutY="227.0" text="Module" />
+                  <TextField fx:id="txtmodule" layoutX="183.0" layoutY="223.0" />
+                  <Button fx:id="btnadd" layoutX="152.0" layoutY="278.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="77.0" text="Add" />
+                  <Button fx:id="btnview" layoutX="254.0" layoutY="278.0" mnemonicParsing="false" onAction="#view" prefHeight="25.0" prefWidth="77.0" text="View" />
+                  <TextField fx:id="txtacademicyear" layoutX="183.0" layoutY="82.0" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

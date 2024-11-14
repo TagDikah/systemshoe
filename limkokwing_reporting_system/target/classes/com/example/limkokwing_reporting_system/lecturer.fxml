@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.limkokwing_reporting_system.Lecturer">
+   <children>
+      <Pane layoutX="217.0" layoutY="48.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="56.0" layoutY="42.0" prefHeight="317.0" prefWidth="506.0" style="-fx-background-color: white;">
+               <children>
+                  <Text layoutX="130.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lecturer Details">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="lblfirstname" layoutX="7.0" layoutY="64.0" text="First Name" textAlignment="CENTER">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtfirstname" layoutX="93.0" layoutY="64.0" />
+                  <Label fx:id="lbllastname" layoutX="274.0" layoutY="66.0" text="Last Name" textAlignment="CENTER">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtlastname" layoutX="355.0" layoutY="64.0" prefHeight="29.0" prefWidth="143.0" />
+                  <Label fx:id="lbllecturerid" layoutX="7.0" layoutY="117.0" text="Lecturer ID" textAlignment="CENTER">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtlecturerid" layoutX="93.0" layoutY="118.0" />
+                  <Label fx:id="lblfaculty" layoutX="274.0" layoutY="117.0" text="Faculty" textAlignment="CENTER">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtfaculty" layoutX="355.0" layoutY="118.0" prefHeight="29.0" prefWidth="143.0" />
+                  <Label fx:id="lblrole" layoutX="7.0" layoutY="170.0" text="Role" textAlignment="CENTER">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblsemester" layoutX="279.0" layoutY="170.0" text="Semester" textAlignment="CENTER">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtsemester" layoutX="355.0" layoutY="171.0" prefHeight="29.0" prefWidth="143.0" />
+                  <Label fx:id="lblAcademicYear" layoutX="-1.0" layoutY="227.0" prefHeight="26.0" prefWidth="97.0" text="Academic Year" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtAcademicYear" layoutX="100.0" layoutY="224.0" prefHeight="29.0" prefWidth="166.0" />
+                  <Label fx:id="lblClass" layoutX="281.0" layoutY="227.0" text="Class" textAlignment="CENTER">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtClass" layoutX="355.0" layoutY="228.0" prefHeight="29.0" prefWidth="143.0" />
+                  <ComboBox fx:id="comboboxrole" layoutX="96.0" layoutY="168.0" prefHeight="29.0" prefWidth="166.0">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <String fx:value="lecturer" />
+                           <String fx:value="Tutor" />
+                           <String fx:value="year leader"/>
+                        </FXCollections>
+                     </items>
+                  </ComboBox>
+                  <Button fx:id="btnadd" layoutX="93.0" layoutY="266.0" mnemonicParsing="false" onAction="#add" prefHeight="44.0" prefWidth="149.0" text="Add" textAlignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnview" layoutX="355.0" layoutY="266.0" mnemonicParsing="false" onAction="#view" prefHeight="44.0" prefWidth="143.0" text="View" textAlignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
